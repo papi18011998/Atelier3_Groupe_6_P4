@@ -1,0 +1,34 @@
+.Emma{
+    float: left;
+    background-color: white;
+    margin-left: 40px;
+    height: 550px;
+    width: 600px;
+    position: absolute;
+    top: 10px;
+    margin-top: 120px;
+}
+p{
+	text-align: center;
+}
+.rs{
+	text-align: center;
+}
+.cs{
+	text-align: right;
+}
+button{
+background-color: blue;
+}
+.email{
+height: 30px; 
+width: 500px;
+}
+.password{
+    height: 30px; 
+    width: 500px;  
+}
+.corps{
+    background-color: white;
+}
+
