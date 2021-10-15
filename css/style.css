@@ -1,3 +1,18 @@
-.page {
-    background-color: blue;
+
+#image{
+width: 30%;
+display: inline;
+margin-top: 75px;
+margin-right: 10%;
+float: right;
+
+
+}
+
+#page{
+    background-color:rgb(3,79,137);  
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+    border: 1px black solid;
 }
