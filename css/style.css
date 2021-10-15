@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+/* <<<<<<< feature Emma */
 .logo{
     height: 90px; 
     width: 90px;
@@ -6,7 +6,8 @@
 li{
     display: inline;
     padding: 6px;
-=======
+}
+/* >>>>>>> feature/Ibrahima */
 .connexionLabel{
     display:flex;
     background-color: #ee752c;
@@ -17,5 +18,5 @@ li{
     font-size: 30px;
     font-weight: bolder;
     margin-left: 50%;
->>>>>>> feature/Ibrahima
 }
+
