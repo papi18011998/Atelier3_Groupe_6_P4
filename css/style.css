@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .logo{
     height: 90px; 
     width: 90px;
@@ -5,4 +6,16 @@
 li{
     display: inline;
     padding: 6px;
+=======
+.connexionLabel{
+    display:flex;
+    background-color: #ee752c;
+}
+.valueLabel{
+    color: white;
+    display: flex;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-left: 50%;
+>>>>>>> feature/Ibrahima
 }
