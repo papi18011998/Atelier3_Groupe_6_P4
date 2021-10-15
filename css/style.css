@@ -1,0 +1,8 @@
+.logo{
+    height: 90px; 
+    width: 90px;
+}
+li{
+    display: inline;
+    padding: 6px;
+}
