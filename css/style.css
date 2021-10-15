@@ -1,0 +1,11 @@
+.connexionLabel{
+    display:flex;
+    background-color: #ee752c;
+}
+.valueLabel{
+    color: white;
+    display: flex;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-left: 50%;
+}
