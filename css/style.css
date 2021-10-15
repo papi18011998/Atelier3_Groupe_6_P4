@@ -1,0 +1,19 @@
+.facebook
+{
+    width: 60px;
+    
+}
+.twitter
+{
+    width: 40px;
+}
+.google
+{
+    width: 37px;;
+}
+#divmedia
+{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
