@@ -3,14 +3,20 @@
     height: 90px; 
     width: 90px;
 }
-li{
+#menu{
+    width: 100%;
+    border: 1px black solid;
+}
+li {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    list-style: none;
     display: inline;
-    padding: 6px;
 }
 /* >>>>>>> feature/Ibrahima */
 .connexionLabel{
     display:flex;
     background-color: #ee752c;
+    height: 100px;
 }
 .valueLabel{
     color: white;
@@ -33,43 +39,34 @@ float: right;
 }
 
 #page{
-    background-color:rgb(3,79,137);  
+    /* background-color:rgb(3,79,137);   */
     height: auto;
     overflow: hidden;
     width: 100%;
     border: 1px black solid;
 }
 /* >>>>>>> feature/LOMBATECH */
-.Emma{
+.formContainer{
     float: left;
     background-color: white;
     margin-left: 40px;
-    height: 550px;
-    width: 600px;
+    width: 40%;
     position: absolute;
-    top: 10px;
-    margin-top: 120px;
+    top: 200px;
 }
 p{
 	text-align: center;
 }
-.rs{
-	text-align: center;
-}
-.cs{
-	text-align: right;
-}
+
 button{
 background-color: blue;
 }
-.email{
-height: 30px; 
-width: 500px;
+.inputSize{
+margin: 20px;
+height: 45px; 
+width: 75%;
+border-radius: 10px 10px 10px 10px;
 }
-.password{
-    height: 30px; 
-    width: 500px;  
-}
-.corps{
-    background-color: white;
+.allLabels{
+    margin: 40px;
 }
