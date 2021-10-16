@@ -1,72 +1,63 @@
-/* <<<<<<< feature Emma */
-.logo{
-    height: 90px; 
-    width: 90px;
-}
-#menu{
-    width: 100%;
-    border: 1px black solid;
-}
-li {
+/* Header part */
+*{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    list-style: none;
-    display: inline;
 }
-/* >>>>>>> feature/Ibrahima */
-.connexionLabel{
-    display:flex;
-    background-color: #ee752c;
-    height: 100px;
-}
-.valueLabel{
-    color: white;
-    display: flex;
-    font-size: 30px;
-    font-weight: bolder;
-    margin-left: 50%;
-}
-
-/* >>>>>>> feature/Anta */
-
-#image{
-width: 30%;
-display: inline;
-margin-top: 75px;
-margin-right: 10%;
-float: right;
-
-
-}
-
-#page{
-    /* background-color:rgb(3,79,137);   */
-    height: auto;
-    overflow: hidden;
+nav{
     width: 100%;
-    border: 1px black solid;
+    border-top:1px rgb(209, 205, 205) double;
+    border-right: 1px rgb(209, 205, 205)double;
+    display: flex;
 }
-/* >>>>>>> feature/LOMBATECH */
-.formContainer{
-    float: left;
+.logo{
+    width: 20%;
+    display: flex;
+}
+.menu{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+ul>li{
+    list-style: none;
+    padding: 1.5rem;
+}
+ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+.containConnexionLabel{
+    background-color: #ee752c;
+    padding-bottom: 2rem;
+    display: flex;
+}
+.connexionLabel{
+    padding-left: 66%;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-basis: 100%;
+}
+#burger,#burgerIcon{
+    display: none;
+}
+#formAndImageDevelop{
+    display: flex;
+    width: 100%;
+    background-color: #034f89;
+    padding-bottom: 0.5rem;
+}
+.leftContain{
+    padding: 2.5rem;
+    margin-left: 3%;
+    flex-basis: 50%;
     background-color: white;
-    margin-left: 40px;
-    width: 40%;
-    position: absolute;
-    top: 200px;
+    position: relative;
+    top: -40px;
+    border: 1px white solid;
 }
-p{
-	text-align: center;
+.rightContain{
+    flex-basis: 47%;
+    border: 1px white solid;
 }
-
-button{
-background-color: blue;
-}
-.inputSize{
-margin: 20px;
-height: 45px; 
-width: 75%;
-border-radius: 10px 10px 10px 10px;
-}
-.allLabels{
-    margin: 40px;
-}
+/* Media Queries part*/
