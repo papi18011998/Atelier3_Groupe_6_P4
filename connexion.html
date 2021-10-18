@@ -11,6 +11,8 @@
     <main>
         <nav>
             <img class="logo" src="img/undraw_secure_login_pdn4.svg" alt="logo">
+            <label for="burger" id="burgerIcon">&equiv;</label>
+            <input type="checkbox" id="burger" class="checkbox">
             <ul class="menu">
                 <li><a href="#">Lorem Ipsum</a></li>
                 <li><a href="#">Lorem Ipsum</a></li>
@@ -18,15 +20,46 @@
                 <li><a href="#">Lorem Ipsum</a></li>
                 <li><a href="#">Lorem Ipsum</a></li>
             </ul>
-            <label for="burger" id="burgerIcon">&equiv;</label>
-            <input type="checkbox" id="burger">
         </nav>
         <section class="containConnexionLabel">
             <h2 class="connexionLabel">Connexion</h2>
         </section>
         <section id="formAndImageDevelop">
-            <form action="quizz.html" class="leftContain"></form>
-            <div class="rightContain"></div>
+            <form action="quizz.html" class="leftContain">
+                <h2 class="colorElement">Bienvenue !</h2>
+                <p>Connectez vous</p>
+                
+                <label for="email" class="allLabels">Email</label>
+                <br><br>
+                <input type="email" name="email" id="email" class="inputSize" placeholder="Saisissez votre email">
+                <br><br>
+                <label for="password" class="allLabels">Password</label>
+                <br><br>
+                <input type="password" name="password" id="password" class="inputSize" placeholder="Saisissez votre mot passe">
+                <br><br>
+                <input type="checkbox" name="souvenir" class="souvenir" id="remember">
+                <label for="remember">Se souvenir de moi</label>
+                <br>
+                <p class="forgetPwd"><a href="#">Mot de passe oublié ?</a></p>
+                <div class="loginBloc"><input type="submit" value="Connexion" ></div>
+                <br>
+                <p class="loginWith">Se connecter avec </p>
+                <div class="socialNetworkContainer">
+                    <a href="https://facebook.com">
+                        <img src="img/logo-facebook-png-transparent.jpg" alt="Se connecter avec facebook" title="Se connecter avec facebook" class="socialNetworkImages">
+                    </a>
+                    <a href="https://twitter.com">
+                        <img src="img/twitter.png" alt="Se connecter avec twitter" title="Se connecter avec twitter" class="socialNetworkImages">
+                    </a>
+                    <a href="https://google.com">
+                        <img src="img/logo-google-.png" alt="Se connexter avec google" title="Se connexter avec google" class="socialNetworkImages">
+                    </a>
+                </div>
+                <p class="loginWith">Vous n'avez pas de compte? <span><a href="#">Inscrivez vous maintenant</a></span></p>
+            </form>
+            <div class="rightContain">
+                <img src="img/undraw_Developer_activity_re_39tg(1).svg" alt="Image developpeur" class="devlopImg">
+            </div>
         </section>
     </main>
 </body>

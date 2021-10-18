@@ -7,6 +7,8 @@ nav{
     border-top:1px rgb(209, 205, 205) double;
     border-right: 1px rgb(209, 205, 205)double;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .logo{
     width: 20%;
@@ -38,26 +40,128 @@ ul>li>a{
     display: flex;
     flex-basis: 100%;
 }
-#burger,#burgerIcon{
+#burgerIcon{
     display: none;
 }
 #formAndImageDevelop{
     display: flex;
     width: 100%;
     background-color: #034f89;
-    padding-bottom: 0.5rem;
+    padding-bottom: 2.5rem;
 }
 .leftContain{
     padding: 2.5rem;
     margin-left: 3%;
-    flex-basis: 50%;
+    flex-basis: 47%;
     background-color: white;
     position: relative;
     top: -40px;
-    border: 1px white solid;
+    border-radius: 10px;
+}
+.loginBloc{
+    padding-bottom: 50px;
 }
 .rightContain{
-    flex-basis: 47%;
-    border: 1px white solid;
+    flex-basis: 50%;
+    padding: 6rem;
 }
+.devlopImg{
+    width: 70%; 
+    border-top: 1px solid #ffff;
+    border-bottom: 1px solid #ffff;
+    padding-left: 10%;
+}
+.colorElement, .colorElement + p,.loginWith{
+text-align: center;
+}
+.colorElement,.forgetPwd{
+    color:#034f89;
+}
+a{
+    text-decoration: none;
+}
+input[type="submit"]{
+    background-color: #007bff;
+    color: white;
+    font-size: 25px;
+    padding: 1rem;
+    float: right;
+    border: 1px #007bff solid;
+    text-align: center;
+}
+.socialNetworkImages{
+    width: 90px;
+    height: 90px;
+}
+.loginWith>span{
+    color: #034f89;
+}
+.socialNetworkContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputSize{
+    width: 90%;
+    padding:1.4rem;
+}
+
 /* Media Queries part*/
+/* standard size for tablets 960px or 10"*/
+/* standar size for phone 768px or 8" */
+@media screen and (max-width: 768px) {
+    /* Menu resposive */
+    #burgerIcon{
+        display: block;
+        color: #ee752c;
+        font-size: 50px;
+        float: right;
+        order: 2;
+    }
+    /* connexionLabel Responsive */
+    .containConnexionLabel{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .connexionLabel{
+       padding-left: 50%;
+       padding-right: 50%;
+    }
+    /* form Responsivity */
+    .leftContain{
+        width: 100%;
+        display: block;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: static;
+        margin-left: 10%;
+    }
+    .formAndImageDevelop{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+    .inputSize{
+        padding: 0.75rem;
+        width: 100%;
+    }
+    .loginBloc{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 0px;
+    }
+    .socialNetworkImages{
+        width: 30px;
+        height: 30px;
+    }
+    /* Develop Image */
+    .rightContain{
+        display: none;
+    }
+}
