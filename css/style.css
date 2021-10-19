@@ -108,6 +108,13 @@ input[type="submit"]{
 #burger{
     display: none;
 }
+.redColor{
+    color: red;
+}
+.alignmentElement{
+   font-weight: bolder;
+   font-size: 2rem;
+}
 /* Media Queries part*/
 /* standard size for tablets 960px or 10"*/
 /* standar size for phone 768px or 8" */
@@ -193,6 +200,10 @@ input[type="submit"]{
         width: 30px;
         height: 30px;
     }
+    .alignmentElement{
+        font-weight: bolder;
+        font-size: 1rem;
+     }
     /* Develop Image */
     .rightContain{
         display: none;
