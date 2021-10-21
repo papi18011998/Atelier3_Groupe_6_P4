@@ -150,7 +150,6 @@ hr {
     margin-top: 50px;
     display: flex;
     width: 100%;
-
     border-radius: 10px 10px 10px 10px;
 }
 .stepper>ul{
@@ -278,5 +277,50 @@ input[type="radio"]{
     /* Develop Image */
     .rightContain{
         display: none;
+    }
+    /* Quizz responsive */
+    .stepper{
+        background-color: #efeff7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .stepper>ul{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .stepper>ul>.critere{
+        list-style: none;
+        padding: 1.5rem;
+    }
+    .ellipsedNumber{
+        padding: 0.5rem;
+        border: 1px black solid;
+        border-radius: 50%;
+        margin-right: 20px;
+     }
+     .footerBloc{
+        background-color:#ee752c;
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        border-radius: 10px 10px 10px 10px;
+    }
+     .radioAndLabel{
+        border-top: 2px white solid;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    .questionLabelAndquestion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
