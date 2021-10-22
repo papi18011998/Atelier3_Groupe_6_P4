@@ -20,7 +20,7 @@ nav{
     align-items: center;
     justify-content: right;
 }
-ul>li{
+.menu>li{
     list-style: none;
     padding: 1.5rem;
 }
@@ -33,6 +33,7 @@ ul>li>a{
     padding-bottom: 2rem;
     display: flex;
 }
+
 .connexionLabel{
     padding-left: 66%;
     color: white;
@@ -114,6 +115,97 @@ input[type="submit"]{
 .alignmentElement{
    font-weight: bolder;
    font-size: 2rem;
+}
+/* Styling quizz.html */
+.stepper{
+    background-color: #efeff7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.questionLabelAndquestion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.question{
+    font-size: 1.5rem;
+}
+.questionLabel{
+    color: #597c8f;
+    font-size: 3rem;
+}
+hr {
+    margin-top:3rem ;
+    border: 0;
+    width: 40%;               
+    background-color:#ee752c;
+    height: 7px;
+  }
+.footerBloc{
+    background-color:#ee752c;
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+}
+.stepper>ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stepper>ul>.critere{
+    list-style: none;
+    padding: 1.5rem;
+}
+.ellipsedNumber{
+   padding: 00.75rem;
+   border: 1px black solid;
+   border-radius: 50%;
+   margin-right: 20px;
+}
+input[type="radio"]{
+    width: 30px;
+}
+.radioAndLabel{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    flex-direction: column;
+}
+.radioContainer,.labelContainer{
+   color: white;
+   font-size: 30px;
+}
+.active{
+    color: blanchedalmond;
+    background-color: #034f89;
+}
+.blocBoutton{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+}
+.btn , .btn + span{
+    color: white;
+    font-size: 30px;
+    background-color:#034f89 ;
+    border: 1px #034f89 solid;
+}
+.btn{
+    border-radius: 5px 0 0 5px;
+}
+.btn +span{
+    border-radius: 0 5px 5px 0
+}
+#reponseInput{
+    padding: 1rem;
+    width: 100%;
 }
 /* Media Queries part*/
 /* standard size for tablets 960px or 10"*/
@@ -207,5 +299,56 @@ input[type="submit"]{
     /* Develop Image */
     .rightContain{
         display: none;
+    }
+    /* Quizz responsive */
+    .stepper{
+        background-color: #efeff7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .stepper>ul{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .stepper>ul>.critere{
+        list-style: none;
+        padding: 1.5rem;
+    }
+    .ellipsedNumber{
+        padding: 0.5rem;
+        border: 1px black solid;
+        border-radius: 50%;
+        margin-right: 20px;
+     }
+     .footerBloc{
+        background-color:#ee752c;
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        border-radius: 10px 10px 10px 10px;
+    }
+     .radioAndLabel{
+        border-top: 2px white solid;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    .questionLabelAndquestion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .blocBoutton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
 }
