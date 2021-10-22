@@ -185,6 +185,28 @@ input[type="radio"]{
     color: blanchedalmond;
     background-color: #034f89;
 }
+.blocBoutton{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+}
+.btn , .btn + span{
+    color: white;
+    font-size: 30px;
+    background-color:#034f89 ;
+    border: 1px #034f89 solid;
+}
+.btn{
+    border-radius: 5px 0 0 5px;
+}
+.btn +span{
+    border-radius: 0 5px 5px 0
+}
+#reponseInput{
+    padding: 1rem;
+    width: 100%;
+}
 /* Media Queries part*/
 /* standard size for tablets 960px or 10"*/
 /* standar size for phone 768px or 8" */
@@ -322,5 +344,11 @@ input[type="radio"]{
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .blocBoutton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
 }
