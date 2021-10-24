@@ -174,7 +174,6 @@ input[type="radio"]{
 .radioAndLabel{
     display: flex;
     align-items: center;
-    width: 25%;
     flex-direction: column;
 }
 .radioContainer,.labelContainer{
@@ -200,12 +199,16 @@ input[type="radio"]{
 .btn{
     border-radius: 5px 0 0 5px;
 }
-.btn +span{
-    border-radius: 0 5px 5px 0
+#questionNumber{
+    border-radius: 0 5px 5px 0;
+    border:2px #034f89 solid;
 }
 #reponseInput{
     padding: 1rem;
     width: 100%;
+}
+.radioAndLabel{
+    width: 50%;
 }
 /* Media Queries part*/
 /* standard size for tablets 960px or 10"*/
@@ -337,7 +340,6 @@ input[type="radio"]{
         border-top: 2px white solid;
         display: flex;
         align-items: center;
-        width: 100%;
         flex-direction: column;
     }
     .questionLabelAndquestion{
