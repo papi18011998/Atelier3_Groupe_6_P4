@@ -196,7 +196,14 @@ input[type="radio"]{
     background-color:#034f89 ;
     border: 1px #034f89 solid;
 }
-.btn{
+.resultBtn{
+    display: none;
+    color: white;
+    font-size: 30px;
+    background-color:#28a745 ;
+    border: 1px #28a745 solid;
+}
+.btn,.resultBtn{
     border-radius: 5px 0 0 5px;
 }
 #questionNumber{

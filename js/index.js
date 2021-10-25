@@ -67,13 +67,14 @@ window.onload = function () {
     var compteurReponsePossible=0
     var i = 1
     var btn = document.querySelector('.btn')
+    var resultBtn = document.querySelector('.resultBtn')
     var questionLabel =document.querySelector(".questionLabel")
     var question = document.querySelector(".question")
     var footerBloc = document.querySelector(".footerBloc")
     var radioInput 
     var score = 0 
     let findChecked = 0 
-    var reponsePossible
+    var getLibelleTable =[]
     var checkedResponse = []
     var questionNumber = document.querySelector("#questionNumber") 
     //fonction permettan de savoir le numero de la question
@@ -116,6 +117,7 @@ window.onload = function () {
     // test de la temperature
     if (questionnaire[0].reponse>= minTemp && questionnaire[0].reponse<= maxTemp) {
         // Ajout de la temperature dans le tableau de reponse du user
+        getLibelleTable.push(questionnaire[0].libelle)
         checkedResponse.push(questionnaire[0].reponse)
         // Ajout de la question suivante
         questionLabel.innerHTML = questionnaire[i].libelle
@@ -136,13 +138,15 @@ window.onload = function () {
                             score = score + questionnaire[i].coefficient[findChecked]
                         }    
                     }
-                    if (i< questionnaire.length-1) {
+                    if (i< questionnaire.length+1) {
                         questionLabel.innerHTML = questionnaire[i+1].libelle
                         question.innerHTML = questionnaire[i+1].question 
                         footerBloc.innerHTML = ""
                         for(compteurReponsePossible = 0; compteurReponsePossible < questionnaire[i+1].reponse.length; compteurReponsePossible++){
                             addElements(questionnaire[i+1].reponse[compteurReponsePossible])
                         }
+                        getLibelleTable.push(questionnaire[i].libelle)
+                        localStorage.setItem("listeDesQuestions",getLibelleTable)
                         
                     }else{
                         questionLabel.innerHTML = questionnaire[i].libelle
@@ -151,10 +155,13 @@ window.onload = function () {
                         for(compteurReponsePossible = 0; compteurReponsePossible < questionnaire[i].reponse.length; compteurReponsePossible++){
                             addElements(questionnaire[i].reponse[compteurReponsePossible])
                         }
-                        btn.setAttribute("disabled","disabled")
-                        console.log(checkedResponse);
+                        btn.setAttribute("style","display:none")
+                        questionNumber.setAttribute("style","display:none")
+                        resultBtn.setAttribute("style","display:block")
+                        console.log(checkedResponse+" "+ score);
+                        localStorage.setItem("score",score)
+                        localStorage.setItem("reponses",checkedResponse)
                     }
-                    console.log(i);
                     i++
                      questionNumber.innerHTML = numeroDequestion()
                 }
@@ -165,9 +172,7 @@ window.onload = function () {
     }else if (questionnaire[i].reponse < maxTemp) {
         alert("Allez à l' hopital car votre température  a baissé la normale ")
       }
-
-
-
-
-
+      resultBtn.onclick = function () {
+        document.location.href="resultat.html"
+    }
 }
